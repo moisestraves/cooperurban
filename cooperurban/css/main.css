@@ -1,0 +1,312 @@
+/*  Página         CSS    */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Ubuntu&display=swap');
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/* Corpo */
+body{
+    font-family: 'Open Sans', Verdana, sans-serif; 
+    background: white;
+}
+
+img {
+    
+    max-width: 100%;
+    
+} 
+
+.cabeca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    text-align: center;
+}
+
+/* Menu */
+
+ h1{
+    width: 38%;
+} 
+
+h1 img{
+
+    max-width: 300px;
+
+}
+
+nav {
+
+    width: 40%;
+    margin-right: 11%;
+    
+}
+
+nav ul {
+
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+nav a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(131, 21, 21);
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 15px;    
+
+}
+
+nav a:hover, nav a:focus {
+
+    color: white;
+    background-color: rgb(231, 220, 216);
+
+}
+
+/* Corpo */
+
+aside {
+
+    width:80%;
+    margin: auto;
+    
+}
+
+aside img {
+    
+    opacity: 0.5;
+    border-radius: 25px;
+
+}
+
+article h2 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+article h3 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+
+}
+
+article{
+
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+article p {
+
+    margin: 10px auto;
+    background-color: white;
+    padding: 5px;
+    box-shadow: white 1px 1px 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+article ul{
+
+    list-style: none;
+
+}
+article ul li {
+
+    
+    text-align: justify;
+    font-size: 25px;
+
+}
+
+article ul li a{
+
+    text-decoration: none;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+section{
+
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+article img{
+
+    width: 55%;
+
+}
+
+article p, a {
+
+    text-decoration: none;
+}
+
+.container {
+
+    width: 50%;
+    margin: auto;
+
+}
+  
+.form-contact {
+
+    width: 100%;
+    font-family: "Arial", Times, serif;
+
+}
+  
+.form-contact-input {
+
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+
+}
+  
+.form-contact-textarea {
+
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Arial", Times, serif;
+
+}
+  
+.form-contact-button {
+
+    width: 100%;
+    font-size: 18px;
+    border-radius: 25px;
+    color: rgb(20, 19, 19);
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: orangered;
+    display: block;
+    border: none;
+    border-bottom: 1px solid orangered;
+    border-right: 1px solid orangered;
+    transition: 1s;
+
+}
+  
+.form-contact-button:hover {
+
+    opacity: 1;
+
+}
+
+figure {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+
+
+/* Rodapé */
+
+footer {
+
+    font-size: 14px;
+    text-align: center;
+    padding: 1%;
+    background-color: orangered;
+    color: black;
+       
+}
+
+/* Responsivo */
+
+@media screen and (max-width:1044px) {
+
+    article {width: 100%;}
+
+}
+
+@media screen and (max-width:999px) {
+
+    .cabeca{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+@media screen and (max-width:895px){
+
+    article{
+        width: 100%;}
+    article h2{
+                font-size: 40px;}
+    article p {font-size: 20px;}
+
+}
+
+@media screen and (max-width:800px){
+
+    .cabeca{ flex-direction: column; }
+    main{margin-top:120px;}
+
+}
+
+/* Tabela Consulta  */
+
+tr, th, td { 
+    border: solid 1px lightslategrey; 
+    padding: 10px;
+}
+
